@@ -7,10 +7,12 @@
       name: nginx
       state: present
   - name: start the nginx
-    ansible.builtin.systemd:
+    ansible.builtin.service:
       name: nginx
-      state: started
+      state: restarted
       enable: yes
+      
+
       
 
       
