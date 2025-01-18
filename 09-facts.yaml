@@ -1,0 +1,11 @@
+- name: print the variables
+  host: web
+  tasks:
+  - name: print tha facts
+     ansible.builtin.debug:
+     msg: "{{ansible_facts}}"
+     
+
+
+
+   
