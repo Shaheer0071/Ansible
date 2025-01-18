@@ -1,10 +1,11 @@
 - name: print the variables
-  host: web
+  host: backend
   tasks:
   - name: print tha facts
     ansible.builtin.debug:
-      msg: "{{ ansible_facts }}""
+      msg: "{{ ansible_facts }}"
       
+
 
 
 
