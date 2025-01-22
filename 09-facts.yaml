@@ -1,9 +1,10 @@
 - name: print the variables
-  hosts: backend
+  hosts: local
   tasks:
   - name: print the facts
     ansible.builtin.debug:
       msg: "{{ ansible_facts }}"
+      
       
 
 
