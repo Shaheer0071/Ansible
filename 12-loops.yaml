@@ -1,6 +1,7 @@
 - name: install the packages
   hosts: backend
   become: yes
+  tasks:
   - name: install packages
     ansible.builtin.package:
      msg: "{{ item }}"
@@ -11,5 +12,6 @@
      - mysql
      - zip
      
+
 
 
