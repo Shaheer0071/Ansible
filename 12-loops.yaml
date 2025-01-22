@@ -5,13 +5,14 @@
   - name: install packages
     ansible.builtin.package:
      msg: "{{ item }}"
-     state: install
+     state: installed
     loop:
      - gcc
      - git
      - mysql
      - zip
      
+
 
 
 
