@@ -1,0 +1,15 @@
+- name: install the packages
+  hosts: backend
+  connection: backend
+  tasks:
+  - name: install packages
+    ansible.builtin.package:
+     msg: "{{ item }}"
+     state: install
+    loop:
+     - gcc
+     - git
+     - mysql
+     - zip
+     
+
