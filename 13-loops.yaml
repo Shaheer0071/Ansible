@@ -9,6 +9,7 @@
     loop:
      - { name: 'git', state: 'absent' }
      - { name: 'zip', state: 'absent' }
-     - { name: 'mysql', state: 'absent'}
-     - { name: 'zip, state: absent'}
-           
+     - { name: 'mysql', state: 'absent' }
+     - { name: 'zip, state: absent' }
+      
+
