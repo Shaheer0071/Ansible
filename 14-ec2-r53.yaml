@@ -17,7 +17,7 @@
      executable: pip3.9
     loop:
      - boto3
-     - botocore3
+     - botocor3
   - name: create ec2 instances
     amazon.aws.ec2_instance:
      subnet_id: "{{ subnet_id }}"
@@ -25,4 +25,3 @@
      image_id: "{{ ami_id }}"
      instance_type: "{{ instance_type }}"
     loop: "{{ instances }}"
-    
